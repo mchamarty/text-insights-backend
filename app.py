@@ -18,22 +18,10 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
-# Configure CORS
-# CORS(app, resources={
-#   r"/*": {
- #       "origins": [
-  #          "https://text-insights-1b990fndp-larridin.vercel.app",  # new Vercel domain
-   #         "http://localhost:3000",
-    #        "http://127.0.0.1:3000"
-        ],
-     #   "methods": ["OPTIONS", "GET", "POST"],
-      #  "allow_headers": ["Content-Type"],
-       # "supports_credentials": True
-    # }
-# })
-
 # Simple CORS configuration that allows all origins
 CORS(app, supports_credentials=True)
+
+#adding a comment just to trigger commit
 
 # Set maximum content length and file size limits
 MAX_FILE_SIZE = 100 * 1024 * 1024  # 100MB
